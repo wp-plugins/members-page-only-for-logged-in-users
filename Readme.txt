@@ -25,10 +25,12 @@ Please refer https://miverve.com/members-page-only-for-logged-in-users/ for more
 
 == Installation ==
 
-1:Upload the Members page only for logged in usersy plugin to your blog
-2:Activate it
-3:Setting your register page URL or redirect page for non member of your buddypress site in Members page only for logged in users menu at admin panel
+1:Upload the Members page only for logged in usersy plugin to your blog.
+2:Activate it.
+3:Setting your register page URL or redirect page for non member of your buddypress site in Members page only for logged in users menu at admin panel.
 That's all, when non member view your buddypress member page they will be redirect to login/register page or if you setting your register page URL, non member will be redirected to your register page URL.
+
+or install and activate it directly from wordpress.
 
 == Frequently Asked Questions ==
 FAQs can be found here: https://miverve.com/members-page-only-for-logged-in-users/

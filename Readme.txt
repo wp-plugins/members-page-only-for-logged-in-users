@@ -5,7 +5,7 @@ Donate link: https://miverve.com/members-page-only-for-logged-in-users/
 Tags:buddypress,wordpress,wordpress members only,community,restricts,membership,user,access,privacy,private,private community,protection,pretected site,member
 Requires at least: 2.0
 Tested up to: 4.1.0
-Stable tag: 1.0.0
+Stable tag: 1.1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -25,7 +25,7 @@ Please refer https://miverve.com/members-page-only-for-logged-in-users/ for more
 
 == Installation ==
 
-1:Upload the Members page only for logged in usersy plugin to your blog.
+1:Upload the Members page only for logged in users plugin to your blog.
 
 2:Activate it.
 

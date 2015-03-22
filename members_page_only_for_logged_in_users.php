@@ -2,7 +2,7 @@
 /*
 Plugin Name: Members page only for logged in users
 Description: Only logged in users can view the members page. Non logged in users will be redirected to either register/login page.
-Version: 1.0.0
+Version: 1.1.0
 Author: Miverve
 Author URI: https://miverve.com/
 Plugin URI: https://miverve.com/
@@ -129,11 +129,22 @@ function members_page_only_for_logged_in_users()
 		}
 	}
 	$current_url = $_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
-	$current_url = str_ireplace('https://','',$current_url);
+         if(isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == "on") { 
+
+	       $current_url = str_ireplace('https://','',$current_url);
+         }else{
+                 $current_url = str_ireplace('http://','',$current_url);
+         }
 	$current_url = str_ireplace('www.','',$current_url);
 	$saved_register_page_url = get_option('registerpageurl');
+         if(isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == "on") { 
 
-	$saved_register_page_url = str_ireplace('https://','',$saved_register_page_url);
+	      $saved_register_page_url = str_ireplace('https://','',$saved_register_page_url);
+
+        }else{
+               $saved_register_page_url = str_ireplace('http://','',$saved_register_page_url);
+
+      }
 	$saved_register_page_url = str_ireplace('www.','',$saved_register_page_url);
 	
 	if (stripos($current_url,$saved_register_page_url) === false)
@@ -158,7 +169,13 @@ function members_page_only_for_logged_in_users()
 		}
 		else 
 		{
+                         if(isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == "on") { 
+
 			$saved_register_page_url = 'https://'.$saved_register_page_url;
+
+                          }else{
+                            $saved_register_page_url = 'http://'.$saved_register_page_url;
+                         }
 			header( 'Location: ' . $saved_register_page_url );
 			die();
 		}

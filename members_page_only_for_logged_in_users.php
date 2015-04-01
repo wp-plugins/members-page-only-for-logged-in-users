@@ -2,7 +2,7 @@
 /*
 Plugin Name: Members page only for logged in users
 Description: Only logged in users can view the members page. Non logged in users will be redirected to either register/login page.
-Version: 1.2.0
+Version: 1.3.0
 Author: Miverve
 Author URI: https://miverve.com/
 Plugin URI: https://miverve.com/

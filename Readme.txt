@@ -5,7 +5,7 @@ Donate link: https://miverve.com/members-page-only-for-logged-in-users/
 Tags:buddypress,wordpress,wordpress members only,community,restricts,membership,user,access,privacy,private,private community,protection,pretected site,member
 Requires at least: 2.0
 Tested up to: 4.1.1
-Stable tag: 1.2.0
+Stable tag: 1.4.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -45,6 +45,8 @@ FAQs can be found here: https://miverve.com/members-page-only-for-logged-in-user
 1.2 - Profile page disable for non logged in users
 
 1.3 - Compatible with wordpress version 4.1.1
+
+1.4 - Various bug fixes
 
 == Screenshots ==
 

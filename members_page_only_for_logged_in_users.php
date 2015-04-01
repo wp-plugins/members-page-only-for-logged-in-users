@@ -2,7 +2,7 @@
 /*
 Plugin Name: Members page only for logged in users
 Description: Only logged in users can view the members page. Non logged in users will be redirected to either register/login page.
-Version: 1.3.0
+Version: 1.4.0
 Author: Miverve
 Author URI: https://miverve.com/
 Plugin URI: https://miverve.com/
@@ -157,7 +157,7 @@ function members_page_only_for_logged_in_users()
 	}
 	//Naren - start
 	
-	if ( is_user_logged_in() == false && ( bp_is_activity_component() || bp_is_groups_component() || bp_is_forums_component() || bp_is_blogs_component() || bp_is_page( BP_MEMBERS_SLUG ) || strpos($current_url,'/profile/')==true ))
+	if ( is_user_logged_in() == false && ( bp_is_activity_component() || bp_is_groups_component() || bp_is_forums_component() || bp_is_blogs_component() || bp_is_page( BP_MEMBERS_SLUG ) || strpos($current_url,'/profile/')==true || strpos($current_url,'/friends/')==true || strpos($current_url,'/following/')==true || strpos($current_url,'/followers/')==true))
 	{
 		if (empty($saved_register_page_url))
 		{

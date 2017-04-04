@@ -157,7 +157,7 @@ function members_page_only_for_logged_in_users()
 	}
 	//Naren - start
 	
-	if ( is_user_logged_in() == false && ( bp_is_activity_component() || bp_is_groups_component() || bp_is_forums_component() || bp_is_blogs_component() || bp_is_page( BP_MEMBERS_SLUG ) || strpos($current_url,'/profile/')==true || strpos($current_url,'/friends/')==true || strpos($current_url,'/following/')==true || strpos($current_url,'/followers/')==true))
+	if ( is_user_logged_in() == false && ( bp_is_activity_component() || bp_is_groups_component() || bp_is_forums_component() || bp_is_blogs_component() || bp_is_current_component( BP_MEMBERS_SLUG ) || strpos($current_url,'/profile/')==true || strpos($current_url,'/friends/')==true || strpos($current_url,'/following/')==true || strpos($current_url,'/followers/')==true))
 	{
 		if (empty($saved_register_page_url))
 		{
